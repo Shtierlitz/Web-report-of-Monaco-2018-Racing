@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block mainmenu %}
+<h2 style="text-align: center">{{title}}</h2>
+{% endblock %}
+
+{% block content %}
+
+<table class="table_report">
+
+    {% for abbr, item in report %}
+    <tr>
+        <td>{{loop.index}}.</td>
+        <td>{{item['abbr']}}</td>
+        <td>{{item['name']}}</td>
+        <td>{{item['team']}}</td>
+        <td>{{item['duration']}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: HackJBMLigaturedCCG-Regular;
+
+    src: url(../fonts/HackJBMLigaturedCCG-Regular.ttf);
+}
+
+body {
+    font-family: HackJBMLigaturedCCG-Regular;
+}
+
+.table_report {
+    white-space: pre;
+    text-align: center;
+    position: absolute;
+    left: 37%
+}
+
+.table_report td { /*ячейки таблицы*/
+    padding-bottom: 10px; /**/
+    padding-left: 10px;
+    text-align: left;
+}
+
+.table_code {
+    white-space: pre;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+}
+
+.table_code td { /*ячейки таблицы*/
+    padding-bottom: 10px; /**/
+}
+
+.table_drivers {
+    white-space: pre;
+    position: absolute;
+    left: 42%;
+}
+
+.table_drivers td { /*ячейки таблицы*/
+    padding-bottom: 10px; /**/
+    padding-left: 10px;
+    text-align: left;
+}
+
+.table_driver {
+    white-space: pre;
+    position: absolute;
+    left: 35%;
+}
+
+.table_driver td { /*ячейки таблицы*/
+    padding-bottom: 10px; /**/
+    padding-left: 10px;
+    padding-right: 12px;
+}

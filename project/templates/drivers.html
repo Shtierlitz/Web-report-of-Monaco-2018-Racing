@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block mainmenu %}
+<h2 style="text-align: center">{{title}}</h2>
+{% endblock %}
+
+{% block content %}
+<table class="table_drivers">
+    {% for abbr, item in drivers %}
+    <tr>
+        {% if fl %}
+        <td>{{loop.revindex}}.</td>
+        {% else %}
+        <td>{{loop.index}}.</td>
+        {% endif %}
+        <td>{{item['name']}}</td>
+        <td><td><a href="{{item['abbr']}}">{{item['abbr']}}</a></td></td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

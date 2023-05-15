@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='fonts/HackJBMLigaturedCCG-Regular.ttf') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+    <title>{{title}}</title>
+</head>
+<body>
+
+{% block mainmenu %}
+<h2 style="text-align: center">{{title}}</h2>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
+</body>
+</html>
