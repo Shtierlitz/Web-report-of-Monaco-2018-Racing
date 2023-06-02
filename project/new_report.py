@@ -1,3 +1,5 @@
+# project/new_report.py
+
 import os
 from datetime import datetime
 
@@ -55,16 +57,16 @@ def sort_report(report: dict, order: str) -> dict:
     return dict(sorted(report.items(), key=lambda item: item[1]['duration'], reverse=is_reversed))
 
 
-def js_list(rep: dict) -> list:
-    """Creates a json list"""
+def js_data_base_list(order):
+    """Creates a json list from query"""
     js_lst = []
-    for abbr, data in rep.items():
+    for data in order:
         js_lst.append({
-            'abbr': data['abbr'],
-            'duration': data['duration'],
-            'end': data['end'],
-            'name': data['name'],
-            "start": data['start'],
-            'team': data['team']
+            'abbr': data.abbr,
+            'duration': data.duration,
+            'end': data.end,
+            'name': data.name,
+            "start": data.start,
+            'team': data.team
         })
     return js_lst

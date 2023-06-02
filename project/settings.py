@@ -1,3 +1,4 @@
+# project/settings.py
 
 try:
     from local_settings import *

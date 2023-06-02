@@ -6,7 +6,7 @@
 
 {% block content %}
 <table class="table_drivers">
-    {% for abbr, item in drivers %}
+    {% for item in drivers %}
     <tr>
         {% if fl %}
         <td>{{loop.revindex}}.</td>
@@ -14,7 +14,7 @@
         <td>{{loop.index}}.</td>
         {% endif %}
         <td>{{item['name']}}</td>
-        <td><td><a href="{{item['abbr']}}">{{item['abbr']}}</a></td></td>
+        <td><td><a href="{{item['abbr']}}">{{item['abbr']}}</a></td>
     </tr>
     {% endfor %}
 </table>

@@ -1,4 +1,3 @@
-# project/app.py
 from flask import Flask
 from flasgger import Swagger
 from project.views import *
@@ -6,7 +5,7 @@ from project.project_api import *
 from project.models import data_base
 
 
-def create_app(config='development'):
+def create_app(config):
     app = Flask(__name__)
     if config == 'development':
         app.config.from_pyfile("local_settings.py")
@@ -27,5 +26,5 @@ def create_app(config='development'):
 
 
 if __name__ == '__main__':
-    app = create_app('testing')
+    app = create_app('development')
     app.run(debug=True)
